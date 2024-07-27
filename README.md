@@ -1,11 +1,11 @@
-# Jogo de Xadrez
+# Jogo de Xadrez  
 Esse jogo de xadrez foi completamente programado utilizando a linguagem JAVA.  
 Esse projeto foi feito durante um curso de JAVA que estou fazendo.
----
+
 ## Ferramentas
 - IDE : IntelliJ Idea
 - Linguagem : Java 17 LTS
----
+
 ## Conceitos Abordados
 - POO (Programação orientada a objetos)
     - Encapsulamento
