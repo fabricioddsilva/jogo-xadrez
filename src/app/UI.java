@@ -54,7 +54,7 @@ public class UI {
                 //Percorrendo as colunas
                 for (int j = 0; j < pieces.length; j++){
                     //Imprimir as peças passando linhas e colunas
-                    printPiece(pieces[i][j]);
+                    printPiece(pieces[i][j], false);
                 }
             //Quebrar a linha depois de todas as peças imprimidas
             System.out.println();
@@ -63,10 +63,30 @@ public class UI {
         System.out.println("  a b c d e f g h");
     }
 
+    public static void printBoard(ChessPiece[][] pieces, boolean[][] possibleMoves){
+        //Percorrendo as linhas
+        for (int i = 0; i < pieces.length; i++){
+            //Marcação das linhas
+            System.out.print((8 - i) + " ");
+            //Percorrendo as colunas
+            for (int j = 0; j < pieces.length; j++){
+                //Imprimir as peças passando linhas e colunas
+                printPiece(pieces[i][j], possibleMoves[i][j]);
+            }
+            //Quebrar a linha depois de todas as peças imprimidas
+            System.out.println();
+        }
+        //No final for imprimir a marcação de colunas
+        System.out.println("  a b c d e f g h");
+    }
+
     //Imprimir a peça
-    private static void printPiece(ChessPiece piece){
+    private static void printPiece(ChessPiece piece, boolean background){
+        if(background){
+            System.out.print(ANSI_BLUE_BACKGROUND);
+        }
         if (piece == null) {
-            System.out.print("-");
+            System.out.print("-" + ANSI_RESET);
         }
         else {
             if (piece.getColor() == Color.WHITE) {
