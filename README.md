@@ -3,7 +3,7 @@
 
 Essa é uma aplicação acadêmica construida durante o meu percurso durante o curso: Java COMPLETO Programação Orientada a Objetos + Projetos, na Udemy [Udemy](https://www.udemy.com/ "Site da Udemy")  
 
-Esse projeto é um jogo de xadrez que pode ser jogando utilizando um terminal.
+Esse projeto é um jogo de xadrez que pode ser jogado utilizando um terminal.
 
 ## Aplicativo Funcionando
 
