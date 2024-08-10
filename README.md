@@ -12,7 +12,7 @@ Esse projeto é um jogo de xadrez que pode ser jogando utilizando um terminal.
 ## Tecnologia
 - Java
 
-## Como executa o projeto
+## Como executar o projeto
 Pré-requisitos: Java 17
 
 ```bash
